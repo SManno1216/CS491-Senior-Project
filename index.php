@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello Brandon, McKenna, and Steven</h1>
+    <h1>Hello Brandon, McKennah, and Steven</h1>
     
 </body>
 </html>
