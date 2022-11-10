@@ -18,64 +18,52 @@
             <a class="logo" href="index.php">Ivy Tutoring</a>
             <!-- navigation items -->
             <div class="nav-items">
-            <a href="index.php">Home</a>
+                <a href="index.php">Home</a>
                 <a href="about.php">About Us</a>
                 <a href="contact.php">Contact Us</a>
                 <a href="courses.php">Course Descriptions</a>
-                <a href="#" id="nav-button">Make An Appointment</a>
+                <a href="" id="nav-button">Make An Appointment</a>
             </div>
         </div>
          <!-- banner text -->
         <div class="banner-text">
-            <h1>Welcome to Ivy Tutoring</h1>
-            <br>
-            <h3 >In-Home and Online Tutoring in New Jersey</h3>
-            <br>
-            <button>Learn More</button>
+            <h1>Mathematics</h1>
         </div>
     </header>
     <!--- End Of Header--->
 
-    <a href="index.php">GO BACK HOME</a>
-
+    <!-- begining of body-->
     <body>
+        
+        <p>At Ivy Tutoring Services we tutor all levels of math from Elementary
+            Math to AP Calculus. Math can be a very difficult and frustrating
+            subject for many students. Our math tutors are knowledgeable and
+            experienced teachers and tutors who patiently work to simplify
+            complex math problems and build confidence in their students. Our
+            math tutors use hands on activities, manipulatives and technology to
+            engage their students interest while helping them to build a solid
+            mathematical foundation. They break down the concepts piece by
+            piece and explain the material in ways that mesh with your childs
+            learning style.</p>
+            
+            <li>Elementary Math</li>
+            <li>Middle School Math</li>
+            <li>Pre-Algebra</li>
+            <li>Algebra 1</li>
+            <li>Trigonometry</li>
+            <li>Pre-Calculus</li>
+            <li>Calculus</li>
+            
+            <button><a href="courses.php">Go Back</a></button>
+            <button onclick="document.location='mathlink.php'">Mathematics</button>
+            <button onclick="document.location='sciencelink.php'">Science</button>
+            <button onclick="document.location='historylink.php'">History</button>
+            <button onclick="document.location='readinglink.php'">Reading and Writing</button>
+        </body>
 
-        <img src="">
-        <p>I have always had a passion to educate young minds and help them blossom into well-rounded,
-        responsible and successful individuals. Throughout my 29 years of teaching, I have had
-        wonderful opportunities to teach diverse groups of students, including those with learning
-        differences, those who performed at grade level and those who were gifted. As a result, I have
-        become proficient at designing creative and stimulating lesson plans, which accommodate
-        multiple intelligences, bring a hands-on approach to learning and keep students interested and
-        focused.
-        My greatest desire is to inspire and motivate students. I actively engage each student by
-        incorporating a variety of manipulatives, enjoyable activities and cooperative learning projects. I
-        tailor lesson plans to meet their diverse interests, as well as demonstrate direct connections
-        between the classroom and everyday life. The lessons I provide students support strong literacy
-        skills and I try to ensure each student become a proficient reader, writer, speaker and a lifelong
-        learner.
-        Having been an Education Major at St. Thomas Aquinas College in Sparkill NY, I am a certified
-        elementary education teacher in NJ and NY. I hold a M.A. in Educational Leadership and
-        Supervision from St. Peter's University and I have successfully completed the Orton Gillingham
-        Program at Fairleigh Dickinson University. I am constantly looking for new approaches to reach
-        all students and develop each one into a strong reader.
+        <!--end of body-->
 
-        Education: Orton Gillingham Teacher Levels 1, 2, 3 & 4
-        Fairleigh Dickenson University, Teaneck NJ; May 2017
-        
-        Master of Art in Educational Supervision/Leadership
-        St. Peter's University Jersey City, NJ; May 1998.
-        
-        Bachelor of Science in Elementary Education
-        St. Thomas Aquinas College, Sparkill, NY; May 1992
-        
-        Certification: New York and New Jersey Certified Elementary Education Teacher
-        
-        Orton Gillingham Teacher
-        IMSLEC Certified
-    </p>
-
-</body>
+    <a href="index.php">GO BACK HOME</a>
 
     <!--- Start of Footer --->
     <footer class="footer">

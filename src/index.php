@@ -14,13 +14,13 @@
         <!-- navigation bar -->
         <div class="navbar">
             <!-- logo -->
-            <a class="logo" href="index.html">Ivy Tutoring</a>
+            <a class="logo" href="index.php">Ivy Tutoring</a>
             <!-- navigation items -->
             <div class="nav-items">
                 <a href="#">Home</a>
-                <a href="about.html">About Us</a>
+                <a href="about.php">About Us</a>
                 <a href="#">Contact Us</a>
-                <a href="#">Course Material</a>
+                <a href="courses.php">Course Material</a>
                 <a href="#" id="nav-button">Apply Now</a>
             </div>
         </div>
