@@ -1,0 +1,48 @@
+.course-body{
+    line-height:1.8;
+    margin: 18px;
+    padding: 20px;
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    font-family: 'Pacifico';
+    font-size: 20px;
+}
+.closure{
+    line-height:1.8;
+    margin: 18px;
+    background-color: lightgreen;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Pacifico';
+}
+.accordion {
+    background-color: lightgreen;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: 5px;
+    transition: 0.4s;
+    font-size: 20px;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+ }
+
+.panel {
+    line-height: 1.8;
+    width: 100%;
+    color: black;
+    font-family: 'Pacfico';
+    padding: 18px;
+    background-color: seagreen;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    font-size: 18px;
+}
