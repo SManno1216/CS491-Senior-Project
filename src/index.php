@@ -17,7 +17,7 @@
             <a class="logo" href="index.php">Ivy Tutoring</a>
             <!-- navigation items -->
             <div class="nav-items">
-                <a href="#">Home</a>
+                <a href="index.php">Home</a>
                 <a href="about.php">About Us</a>
                 <a href="#">Contact Us</a>
                 <a href="courses.php">Course Material</a>
