@@ -6,33 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" type="text/css" href="CSS/courses.css">
-
-    <title>Document</title>
-     
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c3d71edc6.js" crossorigin="anonymous"></script>
+    <title>Ivy Tutoring</title>
 </head>
+
 <body>
 
     <!--- Header of Page --->
-
-    <header id="banner" class="grid">
+    <header>
         <!-- navigation bar -->
         <div class="navbar">
             <!-- logo -->
-            <a class="logo" href="index.php">Ivy Tutoring</a>
+            
+            <div class="logo">
+                <img src="images/logo5.png">
+                <a href="index.html">Ivy Tutoring</a>
+            </div>
+
             <!-- navigation items -->
-            <div class="nav-items">
+            <div class="nav-items" id="nav-container">
+                <div class="nav-close">
+                    <h3 onclick="toggleMenu()">&#10539;</h3>
+                </div>
                 <a href="index.php">Home</a>
                 <a href="about.php">About Us</a>
-                <a href="contact.php">Contact Us</a>
+                <a href="#">Contact Us</a>
                 <a href="courses.php">Course Material</a>
-                <a href="#" id="nav-button">Make An Appointment</a>
+                <a><i class="fa-solid fa-user fa-xl" onclick="toggleMenu()"></i></a>
+                <!-- <button>Apply Now</button> -->
             </div>
-        </div>
-         <!-- banner text -->
-        <div class="banner-text">
-            <h1>Course Material</h1>
-        </div>
+            <div class="menu">
+                <h3 onclick="toggleMenu()">&#9776;</h3>
+            </div>
+        </div>    
+
     </header>
     <!--- End Of Header--->
 
@@ -93,7 +101,7 @@
                     <li>Government</li>
                     <li>Geography</li>
                     <li>Computer Science</li>
-                </div>
+            </div>
 
             <button class="accordion">Science</button>
             <div class="panel">
@@ -127,6 +135,7 @@
                 <li>Essays</li>
                 <li>Research Papers</li>
             </div>
+        </div>
 
             <script>
             var acc = document.getElementsByClassName("accordion");
@@ -144,8 +153,7 @@
                 });
             }
             </script>
-
-        </div>
+    </div>
 
         <!--end of body-->
 
@@ -153,15 +161,13 @@
     <footer class="footer">
         <!-- link container -->
         <div class="footer-container">
-            <img src="images/logo.webp">
+            <img src="images/logo5.png">
             <!-- COLUMN 1 LINKS -->
             <div class="footer-links">
                 <h4>Get to Know Us</h4>
-                <a href="about.php">About Us</a>
-                <a href="contact.php">Contact Us</a>
-                <a href="courses.php">Services</a>
-                <a href="#">Make An Appointment</a>
-                <a href="#">Reviews</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
                 <!-- <hr> -->
             </div>
             <!-- COLUMN 2 LINKS -->
@@ -170,12 +176,11 @@
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
                 <a href="#">Reviews</a>
-                <a href="#">About Us</a>
                 <!-- <hr> -->
             </div>
             <!-- COLUMN 3 LINKS -->
             <div class="footer-links">
-                <h4>Log In</h4>
+                <h4>Get to Know Us</h4>
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
                 <a href="#">Reviews</a>
@@ -183,10 +188,9 @@
             </div>
             <!-- COLUMN 4 EMAIL FORM -->
             <div class="footer-email-form">
-                <h4>Send Us An Email</h4>
+                <h4>Subscribe to Our Newsletter</h4>
                 <input type="email" placeholder="Enter Your Email Address" id="footer-email">
                 <input type="submit" value="Send" id="footer-email-btn">
-                <!-- <hr> -->
             </div>
         </div>
         <!-- Copyright -->
@@ -196,6 +200,8 @@
         </div>
     </footer>
     <!--- End of Footer --->
+
+    <script src="script.js"></script>
 
 </body>
 </html>

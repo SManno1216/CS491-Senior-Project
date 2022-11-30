@@ -1,25 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
+}
+
+:root{
+    --dark-color: rgb(1, 82, 1);
+    --primary-color: #0eb582;
+    --secondary-color: #d6fbe5;
+    --border: .1rem solid var(--primary-color);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+
+    --heading-font: 3rem;
+    --subheading-font: 1.5rem;
+    --body-font: 1.1rem;
+}
+
 .course-body{
     line-height:1.8;
     margin: 18px;
     padding: 20px;
-    background-color: lightgreen;
+    background-color: var(--secondary-color);
     color: black;
     text-align: center;
-    font-family: 'Pacifico';
-    font-size: 20px;
+    font-size: var(--body-font);
 }
 .closure{
     line-height:1.8;
     margin: 18px;
-    background-color: lightgreen;
+    background-color: var(--secondary-color);
     margin: 20px;
     text-align: center;
     padding: 10px;
-    font-size: 15px;
-    font-family: 'Pacifico';
+    font-size: var(--body-font);
 }
 .accordion {
-    background-color: lightgreen;
+    background-color: var(--secondary-color);
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -28,7 +47,8 @@
     border: none;
     outline: 5px;
     transition: 0.4s;
-    font-size: 20px;
+    font-size: var(--body-font);
+    margin-bottom: .5rem;
 }
 .active, .accordion:hover {
     background-color: #ccc;
@@ -37,12 +57,11 @@
 .panel {
     line-height: 1.8;
     width: 100%;
-    color: black;
-    font-family: 'Pacfico';
+    color: var(--secondary-color);
     padding: 18px;
-    background-color: seagreen;
+    background-color: var(--dark-color);
     text-align: center;
     display: none;
     overflow: hidden;
-    font-size: 18px;
+    font-size: var(--body-font);
 }
