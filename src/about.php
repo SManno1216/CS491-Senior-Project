@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c3d71edc6.js" crossorigin="anonymous"></script>
     <title>Ivy Tutoring</title>
+
 </head>
 
 <body>
