@@ -1,12 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
+}
+
+:root{
+    --dark-color: rgb(1, 82, 1);
+    --primary-color: #0eb582;
+    --secondary-color: #d6fbe5;
+    --border: .1rem solid var(--primary-color);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+
+    --heading-font: 3rem;
+    --subheading-font: 1.5rem;
+    --body-font: 1.1rem;
+}
+
 .about{
     line-height: 1.8;
     margin: 20px;
     padding: 20px;
-    background-color: white;
     color: black;
-    background-color: lightgreen;
+    background-color: var(--secondary-color);
     text-align: center;
-    font-family: 'Pacifico';
     font-size: 20px;
 }
 .about-body{
@@ -17,11 +36,9 @@
     line-height: 1.8;
     margin: 20px;
     padding: 20px;
-    background-color: white;
     color: black;
-    background-color: lightgreen;
+    background-color: var(--secondary-color);
     text-align: center;
-    font-family: 'Pacifico';
     font-size: 20px;
 }
 .button{
