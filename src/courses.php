@@ -13,36 +13,33 @@
 
 <body>
 
-    <!--- Header of Page --->
     <header>
-        <!-- navigation bar -->
         <div class="navbar">
-            <!-- logo -->
-            
             <div class="logo">
                 <img src="images/logo5.png">
                 <a href="index.html">Ivy Tutoring</a>
             </div>
-
-            <!-- navigation items -->
+    
             <div class="nav-items" id="nav-container">
-                <div class="nav-close">
-                    <h3 onclick="toggleMenu()">&#10539;</h3>
-                </div>
+                <div id="close-menu" class="fas fa-times" onclick="toggleMenu()"></div>
                 <a href="index.php">Home</a>
-                <a href="about.php">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="courses.php">Course Material</a>
-                <a><i class="fa-solid fa-user fa-xl" onclick="toggleMenu()"></i></a>
-                <!-- <button>Apply Now</button> -->
+                <a href="about.php">About</a>
+                <a href="contact.php">Contact</a>
+                <a href="courses.php">Courses</a>
             </div>
-            <div class="menu">
-                <h3 onclick="toggleMenu()">&#9776;</h3>
+    
+            <div class="nav-icons">
+                <div id="account-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
             </div>
-        </div>    
+        </div>
 
+        <div class="banner">
+            <h1>Welcome To Ivy Tutoring!</h1>
+            <br>
+            <h3>In-Home and Online Tutoring in New Jersey</h3>
+        </div>
     </header>
-    <!--- End Of Header--->
 
     <!-- begining of body-->
     <div class="section-4">

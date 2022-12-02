@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="CSS/about.css">
+    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c3d71edc6.js" crossorigin="anonymous"></script>
-    <title>Ivy Tutoring</title>
+    <title>Document</title>
 </head>
-
 <body>
-
     <header>
         <div class="navbar">
             <div class="logo">
@@ -35,63 +33,78 @@
         </div>
 
         <div class="banner">
-            <h1>Welcome To Ivy Tutoring!</h1>
+            <h1>Contact Us</h1>
             <br>
-            <h3>In-Home and Online Tutoring in New Jersey</h3>
+            <h3>How Can We Help?</h3>
         </div>
     </header>
 
-    <body>
-        <div class="about">
-            <h2>Learn about Melissa's qualifications and how Ivy Tutoring Services can help advance your child!</h2>
+
+    <section class="contact">
+
+        <h1 class="heading">Get in Touch!</h1>
+
+        <div class="contact-body">
+            <!-- <h1 class="heading">Contact Ivy Tutoring Now!</h1> -->
+            <p>Getting started with Ivy Tutoring Services is easy!  
+                It all starts with a phone call to our office to discuss 
+                your child's needs with our director, Melissa. Melissa works 
+                with each student and family to customize a plan that's specific 
+                to the academic goals of that student.
+            </p>
             <br>
-            <div class="about-body">
-                I have always had a passion to educate young minds and help them blossom into well-rounded,
-            responsible and successful individuals. Throughout my 29 years of teaching, I have had
-            wonderful opportunities to teach diverse groups of students, including those with learning
-            differences, those who performed at grade level and those who were gifted. As a result, I have
-            become proficient at designing creative and stimulating lesson plans, which accommodate
-            multiple intelligences, bring a hands-on approach to learning and keep students interested and
-            focused.
-            <br>
-            My greatest desire is to inspire and motivate students. I actively engage each student by
-            incorporating a variety of manipulatives, enjoyable activities and cooperative learning projects. I
-            tailor lesson plans to meet their diverse interests, as well as demonstrate direct connections
-            between the classroom and everyday life. The lessons I provide students support strong literacy
-            skills and I try to ensure each student become a proficient reader, writer, speaker and a lifelong
-            learner.
-            <br>
-            Having been an Education Major at St. Thomas Aquinas College in Sparkill NY, I am a certified
-            elementary education teacher in NJ and NY. I hold a M.A. in Educational Leadership and
-            Supervision from St. Peter's University and I have successfully completed the Orton Gillingham
-            Program at Fairleigh Dickinson University. I am constantly looking for new approaches to reach
-            all students and develop each one into a strong reader.
-            <br>
+            <p>
+                We have a comprehensive, collaborative approach and we work 
+                together with you and your child to identify the 
+                right strategies and the perfect tutor.  We look forward to talking 
+                to you to answer any questions you may have about our tutors and our tutoring services.  
+                Give us a call or send us a note through the form below.  We look forward to working with you and your family!
+            </p>
+        </div>
+        
+        <div class="icons-container">
+            <div class="icons">
+                <h3>Phone</h3>
+                <i class="fas fa-phone"></i>
+                <h3>000-000-0000</h3>
+                <h3>973-999-9999</h3>
+            </div>
+            <div class="icons">
+                <h3>Email</h3>
+                <i class="fas fa-envelope"></i>
+                <h3>Melissa@gmail.com</h3>
+                <h3>IvyTutoring@gmail.com</h3>
+            </div>
+            <div class="icons">
+                <h3>Locations</h3>
+                <i class="fas fa-map"></i>
+                <h3>New Jersey</h3>
+                <h3>New Jersey</h3>
+            </div>
+            <div class="icons">
+                <h3>Phone</h3>
+                <i class="fas fa-phone"></i>
+                <h3>000-000-0000</h3>
+                <h3>973-999-9999</h3>
             </div>
         </div>
+        
+        <div class="row">
+            <div class="contact-image">
+                <img src="images/tutorPic.jpeg">
+            </div>
 
-        <div class="education">
-            <h2>Education History</h2>
-            <br>
-            Orton Gillingham Teacher Levels 1, 2, 3 & 4
-            <br>
-            Fairleigh Dickenson University, Teaneck NJ; May 2017
-            <br>
-            Master of Art in Educational Supervision/Leadership
-            St. Peter's University Jersey City, NJ; May 1998.
-            <br>
-            Bachelor of Science in Elementary Education
-            St. Thomas Aquinas College, Sparkill, NY; May 1992
-            <br>
-            Certification: New York and New Jersey Certified Elementary Education Teacher
-            
-            Orton Gillingham Teacher
-            IMSLEC Certified
-            <br>
-            <button a href="index.php">Home</a></button>
+            <form action="">
+                <h3>Send Us an Email</h3>
+                <input type="text" placeholder="Name" name="name" class="card">
+                <input type="email" placeholder="Email" name="email" class="card">
+                <input type="text" placeholder="Phone" name="phone" class="card">
+                <textarea name="" class="card" placeholder="Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
         </div>
 
-</body>
+    </section>
 
     <!--- Start of Footer --->
     <footer class="footer">
@@ -138,6 +151,7 @@
     <!--- End of Footer --->
 
     <script src="script.js"></script>
+    
 
 </body>
 </html>
