@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
+}
+
+:root{
+    --dark-color: rgb(1, 82, 1);
+    --primary-color: #0eb582;
+    --secondary-color: #d6fbe5;
+    --border: .1rem solid var(--primary-color);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+
+    --heading-font: 3rem;
+    --subheading-font: 1.5rem;
+    --body-font: 1.1rem;
+}
+
+body{
+    background-color: white
+}
+
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.icons{
+    padding: 3rem 2rem;
+    text-align: center;
+    border: var(--border);
+    background: var(--secondary-color);
+}
+
+.icons i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    color: white;
+    background: var(--dark-color);
+}
+
+.icons h3{
+    padding: .5rem 0;
+}
+
+.contact-body{
+    padding: 2rem;
+    border-bottom: var(--border);
+}
+
+.contact-body p{
+    font-size: var(--body-font);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+    /* border: var(--border); */
+}
+
+.row p{
+    font-size: var(--body-font);
+}
+
+.row .about-col{
+    flex: 1 1 40rem;
+}
+
+.contact-image{
+    position: relative;
+}
+
+.row .contact-image{
+    flex: 1 1 40rem;
+}
+
+.row .contact-image img{
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+    object-fit: contain;
+}
+
+.about-section{
+    border-bottom: var(--border);
+}
+
+.about-col h3{
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+.about-section form{
+    margin-top: 1rem;
+}
+
+form{
+    height: 100%;
+    flex: 1 1 40rem;
+    padding: 1rem;
+    text-align: center;
+    border: var(--border);
+    background: var(--secondary-color);
+}
+
+form h3{
+    font-size: var(--subheading-font);
+    padding-bottom: 1rem;
+}
+
+form .card{
+    width: 100%;
+    padding: 1rem 1rem;
+    border: var(--border);
+    font-size: var(--body-font);
+    margin: .7rem 0;
+}
+
+form textarea{
+    height: 15rem;
+    resize: none;
+} 
+

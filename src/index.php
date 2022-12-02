@@ -5,48 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c3d71edc6.js" crossorigin="anonymous"></script>
-    <title>Ivy Tutoring</title>
+    <title>Document</title>
 </head>
 
 <body>
 
     <header>
-        <!-- navigation bar -->
         <div class="navbar">
-            <!-- logo -->
-            
             <div class="logo">
                 <img src="images/logo5.png">
-                <a href="index.html">Ivy Tutoring</a>
+                <a href="index.php">Ivy Tutoring</a>
             </div>
-
-            <!-- navigation items -->
+    
             <div class="nav-items" id="nav-container">
-                <div class="nav-close">
-                    <h3 onclick="toggleMenu()">&#10539;</h3>
-                </div>
+                <div id="close-menu" class="fas fa-times" onclick="toggleMenu()"></div>
                 <a href="index.php">Home</a>
-                <a href="about.php">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="courses.php">Course Material</a>
-                <a><i class="fa-solid fa-user fa-xl" onclick="toggleMenu()"></i></a>
-                <!-- <button>Apply Now</button> -->
+                <a href="about.php">About</a>
+                <a href="contact.php">Contact</a>
+                <a href="courses.php">Courses</a>
             </div>
-            <div class="menu">
-                <h3 onclick="toggleMenu()">&#9776;</h3>
+    
+            <div class="nav-icons">
+                <div id="account-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
             </div>
-        </div>    
+        </div>
 
+        <div class="banner">
+            <h1>Welcome To Ivy Tutoring!</h1>
+            <br>
+            <h3>In-Home and Online Tutoring in New Jersey</h3>
+        </div>
     </header>
+
+    <section class="about-section">
+
+        <div class="row">
+            <div class="about-col">
+                <h3>New Jersey's Premiere Tutoring Service</h3>
+                <p>
+                    If you're looking for a private, in-home or online tutoring service 
+                    in Bergen County NJ, Rockland County NY or pretty much anywhere, we're 
+                    glad you found us! Ivy Tutoring Service should be your first choice for 
+                    quality in home or online tutoring. We provide tutoring services for 
+                    students of all ages, Pre-K through adult. We strive to excite our students 
+                    about the learning process, foster curiosity, and build essential skills for 
+                    academic success.  We can help frustrated and overwhelmed students (and their parents) 
+                    pave the way to lifelong learning and success or provide stimulating Enrichment Programs
+                     in all academic studies to pave the way for continuous self-improvement for students who need a challenge. 
+
+                </p>
+                <br>
+                <p>
+                    Tutoring is more than just reteaching: it is an opportunity to transform students' beliefs about 
+                    themselves and turn them into strong, motivated, lifelong learners. If you're looking for a private, 
+                    in-home or online tutoring service in Bergen County NJ,
+                     Rockland County NY or pretty much anywhere, we're glad you found us! Ivy Tutoring Service 
+                     should be your first choice for quality in home or online tutoring. We provide tutoring services for 
+                     students of all ages, Pre-K through adult. We strive to excite our students about the learning process, 
+                     foster curiosity, and build essential skills for academic success.  We can help frustrated and overwhelmed 
+                     students (and their parents) pave the way to lifelong learning and success or provide stimulating Enrichment 
+                     Programs in all academic studies to pave the way for continuous self-improvement for students who need a challenge.
+                </p>
+                <br>
+                <p>
+                    What sets Ivy Tutoring apart is the personal attention that we give to each student to provide an individualized 
+                    study program that caters to each student's strengths. This means that each and every student is provided with an 
+                    exclusive, one-of-a-kind experience that is tailored to his/her needs. 
+                </p>
+            </div>
+
+            <form action="">
+                <h3>Contact Us</h3>
+                <h4>How Can We Help?</h4>
+                <input type="text" placeholder="Name" name="name" class="card">
+                <input type="email" placeholder="Email" name="email" class="card">
+                <input type="text" placeholder="Phone" name="phone" class="card">
+                <textarea name="" class="card" placeholder="Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+
+    </section>
 
     <!-- /************ START OF ABOUT SECTION *************/
     /******************************************/ -->
 
-    <section class="about-section">
+    <section class="about-section-2">
 
-        <h1 class="heading">Ivy Tutoring Can Help</h1>
+        <h1 class="heading">Ivy Tutoring Can Help You</h1>
 
         <div class="box-container">
             <div class="box">
@@ -56,7 +106,7 @@
                 <div class="overlay">
                     <h3>Orton Gilligan Method</h3>
                     <p>
-                        Ivy Tutoring Service specializes in the Orton-Gillingham method, 
+                        We specialize in the Orton-Gillingham method, 
                         a multisensory approach to remediating dyslexia. If a student has 
                         difficulty with reading, spelling, and/or writing, our certified 
                         tutors can help improve his/her decoding ability and reading fluency.
@@ -102,12 +152,10 @@
                 <h3>Affordable Programs</h3>
                 <button>Learn More</button>
                 <div class="overlay">
-                    <h3>Orton Gilligan Method</h3>
+                    <h3>Affordable Tutoring Programs</h3>
                     <p>
-                        Ivy Tutoring Service specializes in the Orton-Gillingham method, 
-                        a multisensory approach to remediating dyslexia. If a student has 
-                        difficulty with reading, spelling, and/or writing, our certified 
-                        tutors can help improve his/her decoding ability and reading fluency.
+                        Our programs are affordable for every budget,
+                        and we offer flexible payment options to meet your needs.
                     </p>
                     <button>Learn More</button>
                 </div>
@@ -201,6 +249,24 @@
             <div class="box">
                 <img src="images/maths.png">
                 <h3>Math</h3>
+                <button>Learn More</button>
+            </div>
+
+            <div class="box">
+                <img src="images/science.png">
+                <h3>Science</h3>
+                <button>Learn More</button>
+            </div>
+
+            <div class="box">
+                <img src="images/science.png">
+                <h3>Science</h3>
+                <button>Learn More</button>
+            </div>
+
+            <div class="box">
+                <img src="images/science.png">
+                <h3>Science</h3>
                 <button>Learn More</button>
             </div>
 
