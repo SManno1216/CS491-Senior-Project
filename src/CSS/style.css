@@ -32,6 +32,19 @@ body{
     border-radius: 2rem;
 }
 
+.btn:hover{
+    background-color: white;
+    color: var(--dark-color);
+}
+
+.success{
+    background: gainsboro;
+    padding: .5rem 1rem;
+    text-align: center;
+    color: black;
+    box-shadow: var(--box-shadow);
+    margin-top: .5rem;
+}
 
 
 
@@ -42,6 +55,7 @@ header{
     width: 100%;
     min-height: 500px;
     background-image: url(../images/heading-bg.jpg);
+    /* background-image: url(../images/banner.webp); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,6 +135,8 @@ header{
     text-align: center;
     margin-top: 4rem;
     padding: 2rem;
+    /* margin-left: 10rem; */
+    
 }
 
 .banner h1{
@@ -257,9 +273,9 @@ section{
   }
 
   .overlay p{
-    font-size: .9rem;
+    font-size: 1rem;
     margin-bottom: .5rem;
-    padding: 0 .5rem;
+    padding: 0 .3rem;
   }
 
   .overlay button{
@@ -279,13 +295,13 @@ section{
   }
 
 .box img{
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: .5rem;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1.25rem;
 }
 
 .box h3{
-    padding: .5rem 0;
+    padding: .5rem 0; 
     font-size: var(--subheading-font);
 }
 
@@ -297,6 +313,12 @@ section{
     background-color: var(--dark-color);
     color: white;
     border: var(--border);
+}
+
+.box button:hover{
+    background-color: white;
+    border: var(--border);
+    color: var(--dark-color);
 }
 
 /************ END OF SUBJECTS SECTION *************/
