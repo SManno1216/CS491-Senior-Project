@@ -23,24 +23,47 @@
     line-height: 1.8;
     margin: 20px;
     padding: 20px;
-    color: black;
+    color:rgb(1, 82, 1);
     background-color: var(--secondary-color);
     text-align: center;
-    font-size: 20px;
+    font-size: 20px;    
+
 }
 .about-body{
     width: 80%;
     margin-left: 10%;
-}
+    border:rgb(1, 82, 1), 10px;
+    }
 .education{
     line-height: 1.8;
     margin: 20px;
     padding: 20px;
-    color: black;
+    color:rgb(1, 82, 1);
     background-color: var(--secondary-color);
     text-align: center;
     font-size: 20px;
 }
 .button{
     text-align: center;
+    border-style: solid 10px;
+}
+.section-4{
+    width:90%;
+}
+.melissa-img img{
+    width: 500px;
+    height:650px;
+}
+.education h2{
+    color:rgb(1, 82, 1);
+    border-bottom: solid rgb(1, 82, 1);
+}
+.about h1{
+    border-bottom: solid rgb(1, 82, 1);
+}
+.homebutton{
+    color:rgb(1, 82, 1);
+}
+.melissa-body{
+    align-items: right;
 }

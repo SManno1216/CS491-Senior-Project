@@ -19,49 +19,130 @@
     --body-font: 1.1rem;
 }
 
-.course-body{
+.course-descrip{
     line-height:1.8;
     margin: 18px;
     padding: 20px;
-    background-color: var(--secondary-color);
+    background-color: white;
     color: black;
     text-align: center;
     font-size: var(--body-font);
 }
-.closure{
+.course-descrip h1{
+    border-bottom: solid rgb(1, 82, 1);
+}
+.aside{
     line-height:1.8;
     margin: 18px;
-    background-color: var(--secondary-color);
-    margin: 20px;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: var(--body-font);
+    text-align: left;
     font-size: var(--body-font);
 }
-.accordion {
-    background-color: var(--secondary-color);
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
+.aside h4{
     width: 100%;
     text-align: center;
-    border: none;
-    outline: 5px;
-    transition: 0.4s;
-    font-size: var(--body-font);
-    margin-bottom: .5rem;
 }
-.active, .accordion:hover {
-    background-color: #ccc;
- }
 
-.panel {
-    line-height: 1.8;
-    width: 100%;
-    color: var(--secondary-color);
-    padding: 18px;
-    background-color: var(--dark-color);
-    text-align: center;
-    display: none;
-    overflow: hidden;
-    font-size: var(--body-font);
+
+.course-homebutton{
+    color: black;
+    text-align: center;    
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color:rgb(1, 82, 1);
 }
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-color);
+    overflow-y:hidden;
+    overflow-x: scroll;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+
+}
+.section-6 .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.section-6 .box{
+
+    padding: 11rem 2rem;
+    text-align: center;
+    border: var(--border);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.section-6 .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-color);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+  }
+
+  .overlay h3{
+    margin-bottom: .5rem;
+  }
+
+  .overlay p{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+    padding: 0 .5rem;
+  }
+
+  .overlay button{
+    width: 75%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: .5rem;
+    background-color: var(--dark-color);
+    color: white;
+    border: var(--border);
+  }
+  .section-6 .box:hover .overlay {
+    height: 100%;
+    padding: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  .section-6 .box img{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: .5rem;}
+
+.box h3{
+    padding: .5rem 0;
+    font-size: var(--subheading-font);
+}
+
+.box button{
+    width: 75%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: .5rem;
+    background-color: var(--dark-color);
+    color: white;
+    border: var(--border);
+}
+.overlay p{
+    text-align: justify;
+}
+
+
