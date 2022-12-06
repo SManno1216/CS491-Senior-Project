@@ -409,9 +409,6 @@ section{
 
 /* END OF FOOTER */
 
-
-
-
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
@@ -502,3 +499,4 @@ section{
         min-height: 400px;
     }
 }
+

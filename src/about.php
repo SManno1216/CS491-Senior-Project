@@ -43,55 +43,64 @@
         </div>
     </header>
 
-    <body>
+    <section-4 class="section-4">
         <div class="about">
-            <h2>Learn about Melissa's qualifications and how Ivy Tutoring Services can help advance your child!</h2>
-            <br>
-            <div class="about-body">
-                I have always had a passion to educate young minds and help them blossom into well-rounded,
-            responsible and successful individuals. Throughout my 29 years of teaching, I have had
-            wonderful opportunities to teach diverse groups of students, including those with learning
-            differences, those who performed at grade level and those who were gifted. As a result, I have
-            become proficient at designing creative and stimulating lesson plans, which accommodate
-            multiple intelligences, bring a hands-on approach to learning and keep students interested and
-            focused.
-            <br>
-            My greatest desire is to inspire and motivate students. I actively engage each student by
-            incorporating a variety of manipulatives, enjoyable activities and cooperative learning projects. I
-            tailor lesson plans to meet their diverse interests, as well as demonstrate direct connections
-            between the classroom and everyday life. The lessons I provide students support strong literacy
-            skills and I try to ensure each student become a proficient reader, writer, speaker and a lifelong
-            learner.
-            <br>
-            Having been an Education Major at St. Thomas Aquinas College in Sparkill NY, I am a certified
-            elementary education teacher in NJ and NY. I hold a M.A. in Educational Leadership and
-            Supervision from St. Peter's University and I have successfully completed the Orton Gillingham
-            Program at Fairleigh Dickinson University. I am constantly looking for new approaches to reach
-            all students and develop each one into a strong reader.
-            <br>
+            <div class="melissa-img">
+                <img src="images/melissa.jpg">
+            </div>
+            <h1>Melissa Frank</h1>
+            <div class="melissa-body">
+                <h3>Learn about Melissa's qualifications and how Ivy Tutoring Services can help advance your child!</h3>
+                <br>
+                <div class="about-body">
+                    I have always had a passion to educate young minds and help them blossom into well-rounded,
+                    responsible and successful individuals. Throughout my 29 years of teaching, I have had
+                    wonderful opportunities to teach diverse groups of students, including those with learning
+                    differences, those who performed at grade level and those who were gifted. As a result, I have
+                    become proficient at designing creative and stimulating lesson plans, which accommodate
+                    multiple intelligences, bring a hands-on approach to learning and keep students interested and
+                    focused.
+                    <br>
+                    My greatest desire is to inspire and motivate students. I actively engage each student by
+                    incorporating a variety of manipulatives, enjoyable activities and cooperative learning projects. I
+                    tailor lesson plans to meet their diverse interests, as well as demonstrate direct connections
+                    between the classroom and everyday life. The lessons I provide students support strong literacy
+                    skills and I try to ensure each student become a proficient reader, writer, speaker and a lifelong
+                    learner.
+                    <br>
+                    Having been an Education Major at St. Thomas Aquinas College in Sparkill NY, I am a certified
+                    elementary education teacher in NJ and NY. I hold a M.A. in Educational Leadership and
+                    Supervision from St. Peter's University and I have successfully completed the Orton Gillingham
+                    Program at Fairleigh Dickinson University. I am constantly looking for new approaches to reach
+                    all students and develop each one into a strong reader.
+                </div>
             </div>
         </div>
-
-        <div class="education">
-            <h2>Education History</h2>
-            <br>
-            Orton Gillingham Teacher Levels 1, 2, 3 & 4
-            <br>
-            Fairleigh Dickenson University, Teaneck NJ; May 2017
-            <br>
-            Master of Art in Educational Supervision/Leadership
-            St. Peter's University Jersey City, NJ; May 1998.
-            <br>
-            Bachelor of Science in Elementary Education
-            St. Thomas Aquinas College, Sparkill, NY; May 1992
-            <br>
-            Certification: New York and New Jersey Certified Elementary Education Teacher
+</section-4>
+<section-5>
+    <div class="education">
+        <h2>Education History</h2>
+        <br>
+        Orton Gillingham Teacher Levels 1, 2, 3 & 4
+        <br>
+        Fairleigh Dickenson University, Teaneck NJ; May 2017
+        <br>
+        Master of Art in Educational Supervision/Leadership
+        St. Peter's University Jersey City, NJ; May 1998.
+        <br>
+        Bachelor of Science in Elementary Education
+        St. Thomas Aquinas College, Sparkill, NY; May 1992
+        <br>
+        Certification: New York and New Jersey Certified Elementary Education Teacher
             
-            Orton Gillingham Teacher
-            IMSLEC Certified
-            <br>
-            <button a href="index.php">Home</a></button>
+        Orton Gillingham Teacher
+        IMSLEC Certified
+        <br>
+        <div class="homebutton">
+            <a href="index.php">Home</a>
         </div>
+    </div>
+</section-5>
 
 </body>
 

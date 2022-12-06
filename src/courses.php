@@ -44,8 +44,11 @@
     </header>
 
     <!-- begining of body-->
-    <div class="section-4">
-        <div class="course-body">
+    
+
+    <section class="section-6">
+    <div class="course-body">
+        <div class="course-descrip">
             <h1> Course Material</h1>
             <br>
             <p>Beginning school is such a wonderful milestone. Let us
@@ -58,101 +61,150 @@
             games to create an interactive learning experience that
             will motivate and inspire your child all while giving them a
             solid foundation to begin formal schooling.</p>
-         </div>
-         <src img="">
-             <div class="closure">
-                 <h4>Our tutors are available seven days a week to travel to your home for
-                 personalized one-on-one lessons. We work collaboratively with your
-                 childs teacher and provide you with a progress report after each
-                 session detailing progress that was made and areas that still need to
-                 be addressed.</h4>
-            </div>                
-            <button class="accordion">Mathematics</button>
-            <div class="panel">
-                <p>At Ivy Tutoring Services we tutor all levels of math from Elementary
-                Math to AP Calculus. Math can be a very difficult and frustrating
-                subject for many students. Our math tutors are knowledgeable and
-                experienced teachers and tutors who patiently work to simplify
-                complex math problems and build confidence in their students. Our
-                math tutors use hands on activities, manipulatives and technology to
-                engage their students interest while helping them to build a solid
-                mathematical foundation. They break down the concepts piece by
-                piece and explain the material in ways that mesh with your childs
-                learning style.</p>
-                <br>
-                <li>Elementary Math</li>
-                <li>Middle School Math</li>
-                <li>Pre-Algebra</li>
-                <li>Algebra 1</li>
-                <li>Trigonometry</li>
-                <li>Pre-Calculus</li>
-                <li>Calculus</li>
+        </div>
+         
+        <div class="aside">
+            <h4>Our tutors are available seven days a week to travel to your home for
+                personalized one-on-one lessons. We work collaboratively with your
+                childs teacher and provide you with a progress report after each
+                session detailing progress that was made and areas that still need to
+                be addressed.
+            </h4>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/calculator.png">
+                <h3>Mathematics</h3>
+                <button>Learn More</button>
+                <div class="overlay">
+                    <h3>Mathematics</h3>
+                    <p>At Ivy Tutoring Services we tutor all levels of math from Elementary
+                        Math to AP Calculus. Math can be a very difficult and frustrating
+                        subject for many students. Our math tutors are knowledgeable and
+                        experienced teachers and tutors who patiently work to simplify
+                        complex math problems and build confidence in their students. Our
+                        math tutors use hands on activities, manipulatives and technology to
+                        engage their students interest while helping them to build a solid
+                        mathematical foundation. They break down the concepts piece by
+                        piece and explain the material in ways that mesh with your childs
+                        learning style.</p>
+                    <li>Elementary Math</li>
+                    <li>Middle School Math</li>
+                    <li>Pre-Algebra</li>
+                    <li>Algebra 1</li>
+                    <li>Trigonometry</li>
+                    <li>Pre-Calculus</li>
+                    <li>Calculus</li>
+                </div>
             </div>
 
-            <button class="accordion">History</button>
-            <div class="panel">
-                <p>Our History and Social Science tutors will help you to understand your
+            <div class="box">
+                <img src="images/parchment.png">
+                <h3>History</h3>
+                <button>Learn More</button>
+                <div class="overlay">
+                    <h3>History</h3>
+                    <p>Our History and Social Science tutors will help you to understand your
                     classwork and improve your grades and confidence through 1:1 tutoring.</p>
-                    <br>
                     <li>American History</li>
                     <li>European History</li>
                     <li>World History</li>
                     <li>Government</li>
                     <li>Geography</li>
                     <li>Computer Science</li>
+                </div>
             </div>
 
-            <button class="accordion">Science</button>
-            <div class="panel">
-                Science can be difficult, but we can make it easier! Our science
-                tutors at Ivy Tutoring Services can help you gain a better 
-                understanding and improve your grades!
-                <br>
-                <li>Middle School Science</li>
-                <li>Physical Science</li>
-                <li>Environmental Science</li>
-                <li>Biology</li>
-                <li>Chemistry</li>
-                <li>Physics</li>
-                <li>AP Science Classes</li>
-                <li>And More!</li>
+            <div class="box">
+                <img src="images/chemistry.png">
+                <h3>Science</h3>
+                <button>Learn More</button>
+                <div class="overlay">
+                    <h3>Science</h3>
+                    <p>Science can be difficult, but we can make it easier! Our science
+                    tutors at Ivy Tutoring Services can help you gain a better 
+                    understanding and improve your grades!</p>
+                    <li>Middle School Science</li>
+                    <li>Physical Science</li>
+                    <li>Environmental Science</li>
+                    <li>Biology</li>
+                    <li>Chemistry</li>
+                    <li>Physics</li>
+                    <li>AP Science Classes</li>
+                    <li>And More!</li>
+                </div>
             </div>
-            <button class="accordion">Reading and Writing</button>
-            <div class="panel">
-                <p>Ivy Tutoring Services provides personally tailored reading lessons from
-                our highly qualified and outstanding tutors. Reading is one of the most
-                important skills for a child to master. Success in every other subject
-                requires it. Writing is an essential communication tool that requires a
-                skilled thought process. Our tutors can work with you 1:1 to improve
-                writing skills and improve your grades. Our tutors can teach and improve:</p>
-                <br>
-                <li>Fluency</li>
-                <li>Comprehension</li>
-                <li>Vocabulary</li>
-                <li>Grammer</li>
-                <li>Spelling</li>
-                <li>Essays</li>
-                <li>Research Papers</li>
+    </div>
+    <div class="box-container">
+        <div class="box">
+                <img src="images/note.png">
+                <h3>Reading and Writing</h3>
+                <button>Learn More</button>
+                <div class="overlay">
+                    <h3>Reading and Writing</h3>
+                    <p>Ivy Tutoring Services provides personally tailored reading lessons from
+                    our highly qualified and outstanding tutors. Reading is one of the most
+                    important skills for a child to master. Success in every other subject
+                    requires it. Writing is an essential communication tool that requires a
+                    skilled thought process. Our tutors can work with you 1:1 to improve
+                    writing skills and improve your grades. Our tutors can teach and improve:</p>
+                    <li>Fluency</li>
+                    <li>Comprehension</li>
+                    <li>Vocabulary</li>
+                    <li>Grammer</li>
+                    <li>Spelling</li>
+                    <li>Essays</li>
+                    <li>Research Papers</li>
+                    
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/toy-blocks.png">
+                <h3>Kindergarten and Preschool Tutoring</h3>
+                <button>Learn More</button>
+                <div class="overlay">
+                    <h3>Kindergarten and Preschool</h3>
+                    <p>Beginning school is such a wonderful milestone. Let us help your child have the 
+                    best possible start. Our tutors will provide a nurturing and hands-on learning
+                    experience that will give your child the tools needed to have a successful start
+                     to their academic career!
+                     All of our preschool tutors are certified early childhood teachers. Our tutors incorporate 
+                     hands-on activities and games to create an interactive learning experience that will 
+                     motivate and inspire your child all while giving them a solid foundation to begin formal schooling.
+                     
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/brainstorm.png">
+                <h3>Orton Gillingham Method</h3>
+                <button>Learn More</button>
+                <div class="overlay">
+                    <h3>Orton Gillingham</h3>
+                    <p>Ivy Tutoring Service specializes in the Orton-Gillingham method, a multisensory approach 
+                        to remediating dyslexia. If a student has difficulty with reading, spelling, and/or writing,
+                         our certified tutors can help improve his/her decoding ability and reading fluency. The Orton Gillingham
+                         methodology for teaching reading and spelling is a scientifically based, systematic, multi-sensory
+                         program with many decades of research behind it. The "OG" method is considered <strong>the</strong> best 
+                         methodogoly for teaching dyslexic children. Research shows that other struggling learners benefit 
+                         greatly from OG instruction as well.
+                         <br>
+                         Children with dyslexia and other struggling readers/spellers typically require direct, specific instruction
+                         in each of the components of the reading process in order to read and spell proficiently. They often
+                         benefit from the intensity of instruction, and the one-on-one settings where learning is personalized.
+                         Please call for more information about our Orton Gillingham program.</p>
+                </div>
             </div>
         </div>
-
-            <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                        panel.style.display = "none";
-                    } 
-                    else {
-                        panel.style.display = "block";
-                    }
-                });
-            }
-            </script>
+        <div class="course-homebutton">
+            <a href="index.php">Home</a>
+        </div>
     </div>
+            
+
+</section-6>
 
         <!--end of body-->
 
