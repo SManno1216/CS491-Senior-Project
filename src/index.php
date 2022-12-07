@@ -33,7 +33,7 @@
             </div>
     
             <div class="nav-icons">
-                <div id="account-btn" class="fas fa-user"></div>
+                <div data-modal-target="#modal" id="account-btn" class="fas fa-user"></div>
                 <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
             </div>
         </div>
@@ -44,6 +44,19 @@
             <h3>In-Home and Online Tutoring in New Jersey</h3>
         </div>
     </header>
+
+    <div class="modal" id="modal">
+        <span data-close-button class="close">&times;</span>
+        <div class="login-container">
+            <form action="">
+                <h1>Tutor Login</h1>
+                <input type="email" placeholder="Email" name="email" class="card">
+                <input type="password" placeholder="Password" name="password" class="card">
+                <input type="submit" name="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <div id="login-overlay"></div>
 
     <section class="about-section">
 
@@ -255,6 +268,7 @@
             </div>
 
             <div class="box">
+                <!-- <img src="images/maths.png"> -->
                 <img src="images/maths.png">
                 <h3>Math</h3>
                 <a href="courses.php"><button>Learn More</button></a>

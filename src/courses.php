@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" type="text/css" href="CSS/courses.css">
+    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c3d71edc6.js" crossorigin="anonymous"></script>
     <title>Ivy Tutoring</title>
@@ -31,7 +32,7 @@
             </div>
     
             <div class="nav-icons">
-                <div id="account-btn" class="fas fa-user"></div>
+            <div data-modal-target="#modal" id="account-btn" class="fas fa-user"></div>
                 <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
             </div>
         </div>
@@ -43,11 +44,25 @@
         </div>
     </header>
 
+    <div class="modal" id="modal">
+        <span data-close-button class="close">&times;</span>
+        <div class="login-container">
+            <form action="">
+                <h1>Tutor Login</h1>
+                <input type="email" placeholder="Email" name="email" class="card">
+                <input type="password" placeholder="Password" name="password" class="card">
+                <input type="submit" name="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <div id="login-overlay"></div>
+
     <!-- begining of body-->
     
 
-    <section class="section-6">
+<section class="section-6">
     <div class="course-body">
+
         <div class="course-descrip">
             <h1> Course Material</h1>
             <br>
@@ -197,14 +212,11 @@
                          Please call for more information about our Orton Gillingham program.</p>
                 </div>
             </div>
-        </div>
-        <div class="course-homebutton">
-            <a href="index.php">Home</a>
+
         </div>
     </div>
             
-
-</section-6>
+</section>
 
         <!--end of body-->
 

@@ -50,8 +50,8 @@ body{
 }
 
 .icons h3{
-    font-size: 1.25rem;
     padding: .5rem 0;
+    flex-wrap: wrap;
 }
 
 .icons p{
@@ -90,7 +90,7 @@ body{
 }
 
 .row .contact-image{
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
 }
 
 .row .contact-image img{
@@ -115,11 +115,12 @@ body{
 
 form{
     height: 100%;
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
     padding: 1rem;
     text-align: center;
     border: var(--border);
     background: var(--secondary-color);
+    border-radius: 1rem;
 }
 
 form h3{

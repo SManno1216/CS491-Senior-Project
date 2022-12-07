@@ -31,7 +31,7 @@
             </div>
     
             <div class="nav-icons">
-                <div id="account-btn" class="fas fa-user"></div>
+            <div data-modal-target="#modal" id="account-btn" class="fas fa-user"></div>
                 <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
             </div>
         </div>
@@ -43,6 +43,18 @@
         </div>
     </header>
 
+    <div class="modal" id="modal">
+        <span data-close-button class="close">&times;</span>
+        <div class="login-container">
+            <form action="">
+                <h1>Tutor Login</h1>
+                <input type="email" placeholder="Email" name="email" class="card">
+                <input type="password" placeholder="Password" name="password" class="card">
+                <input type="submit" name="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <div id="login-overlay"></div>
 
     <section class="contact">
 
@@ -76,7 +88,7 @@
                 <h3>Email</h3>
                 <i class="fas fa-envelope"></i>
                 <!-- <h3>Email</h3> -->
-                <h3>Mfrank@ivytutoringservice.com</h3>
+                <p>Mfrank@ivytutoringservice.com</p>
             </div>
             <div class="icons">
                 <h3>Locations</h3>
@@ -154,7 +166,33 @@
     </footer>
     <!--- End of Footer --->
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        // Get the modal
+        var modal = document.getElementById("MyModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("account-btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
     
 
 </body>
