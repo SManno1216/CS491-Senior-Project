@@ -20,7 +20,7 @@
         <div class="navbar">
             <div class="logo">
                 <img src="images/logo5.png">
-                <a href="index.html">Ivy Tutoring</a>
+                <a href="index.php">Ivy Tutoring</a>
             </div>
     
             <div class="nav-items" id="nav-container">
