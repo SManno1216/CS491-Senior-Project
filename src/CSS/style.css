@@ -81,7 +81,7 @@ body{
 }
 
 .login-container input[type="submit"]:hover{
-    background: var(--primary-color);
+    background: white;
     border: .1rem solid var(--dark-color);
     color: var(--dark-color);
     cursor: pointer;
@@ -389,6 +389,7 @@ section{
     background-color: var(--dark-color);
     color: white;
     border: var(--border);
+    display: none;
 }
 
 .box button:hover{
@@ -583,6 +584,10 @@ section{
     }
 
     #menu-btn{
+        display: inline-block;
+    }
+
+    .box button{
         display: inline-block;
     }
 

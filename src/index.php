@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c3d71edc6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Welcome to Ivy Tutoring</title>
 </head>
 
 <body>
@@ -123,7 +123,7 @@
                 <img src="images/light.png">
                 <h3>Orton Gillingham Method</h3>
                 <br>
-                <!-- <button>Learn More</button> -->
+                <button>Learn More</button>
                 <div class="overlay">
                     <h3>Orton Gillingham</h3>
                     <p>
@@ -140,7 +140,7 @@
                 <img src="images/teacher.png">
                 <h3>Certified Teachers & Tutors</h3>
                 <br>
-                <!-- <button>Learn More</button> -->
+                <button>Learn More</button>
                 <div class="overlay">
                     <h3>Certified Tutors</h3>
                     <p>
@@ -156,7 +156,7 @@
                 <img src="images/piece.png">
                 <h3>The Perfect Fit</h3>
                 <br>
-                <!-- <button>Learn More</button> -->
+                <button>Learn More</button>
                 <div class="overlay">
                     <h3>The Perfect Fit</h3>
                     <p>
@@ -172,7 +172,7 @@
                 <img src="images/schedule.png">
                 <h3>Flexible Scheduling</h3>
                 <br>
-                <!-- <button>Learn More</button> -->
+                <button>Learn More</button>
                 <div class="overlay">
                     <h3>Flexible Scheduling</h3>
                     <p>
@@ -268,7 +268,6 @@
             </div>
 
             <div class="box">
-                <!-- <img src="images/maths.png"> -->
                 <img src="images/maths.png">
                 <h3>Math</h3>
                 <a href="courses.php"><button>Learn More</button></a>
