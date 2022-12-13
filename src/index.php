@@ -1,3 +1,7 @@
+<?php
+    include('mail.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c3d71edc6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Welcome to Ivy Tutoring</title>
 </head>
 
 <body>
@@ -29,7 +33,7 @@
             </div>
     
             <div class="nav-icons">
-                <div id="account-btn" class="fas fa-user"></div>
+                <div data-modal-target="#modal" id="account-btn" class="fas fa-user"></div>
                 <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
             </div>
         </div>
@@ -40,6 +44,19 @@
             <h3>In-Home and Online Tutoring in New Jersey</h3>
         </div>
     </header>
+
+    <div class="modal" id="modal">
+        <span data-close-button class="close">&times;</span>
+        <div class="login-container">
+            <form action="">
+                <h1>Tutor Login</h1>
+                <input type="email" placeholder="Email" name="email" class="card">
+                <input type="password" placeholder="Password" name="password" class="card">
+                <input type="submit" name="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <div id="login-overlay"></div>
 
     <section class="about-section">
 
@@ -78,14 +95,17 @@
                 </p>
             </div>
 
-            <form action="">
+            <form method="post">
                 <h3>Contact Us</h3>
                 <h4>How Can We Help?</h4>
                 <input type="text" placeholder="Name" name="name" class="card">
                 <input type="email" placeholder="Email" name="email" class="card">
                 <input type="text" placeholder="Phone" name="phone" class="card">
-                <textarea name="" class="card" placeholder="Message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <textarea name="Message" class="card" placeholder="Message" cols="30" rows="10"></textarea>
+                <input type="submit" name="submit" value="Send Message" class="btn">
+                <?php if(!empty($status)){ ?>
+                    <div class="success"> <?php echo $status; ?></div>
+                <?php } ?>
             </form>
         </div>
 
@@ -96,68 +116,69 @@
 
     <section class="about-section-2">
 
-        <h1 class="heading">Ivy Tutoring Can Help You</h1>
+        <h1 class="heading">Why Choose Ivy Tutoring?</h1>
 
         <div class="box-container">
             <div class="box">
                 <img src="images/light.png">
-                <h3>Orton Gilligan Method</h3>
+                <h3>Orton Gillingham Method</h3>
+                <br>
                 <button>Learn More</button>
                 <div class="overlay">
-                    <h3>Orton Gilligan Method</h3>
+                    <h3>Orton Gillingham</h3>
                     <p>
                         We specialize in the Orton-Gillingham method, 
                         a multisensory approach to remediating dyslexia. If a student has 
                         difficulty with reading, spelling, and/or writing, our certified 
                         tutors can help improve his/her decoding ability and reading fluency.
                     </p>
-                    <button>Learn More</button>
+                    <a href="courses.php"><button>Learn More</button></a>
                 </div>
             </div>
 
             <div class="box">
                 <img src="images/teacher.png">
-                <h3>Certified Tutors</h3>
+                <h3>Certified Teachers & Tutors</h3>
+                <br>
                 <button>Learn More</button>
                 <div class="overlay">
-                    <h3>Orton Gilligan Method</h3>
+                    <h3>Certified Tutors</h3>
                     <p>
-                        Ivy Tutoring Service specializes in the Orton-Gillingham method, 
-                        a multisensory approach to remediating dyslexia. If a student has 
-                        difficulty with reading, spelling, and/or writing, our certified 
-                        tutors can help improve his/her decoding ability and reading fluency.
+                        Our state-certified and professional teachers are carefully selected
+                        from among the brightest in their fields. They are caring, supportive
+                        people who instill confidence and motivate students to excel in the classroom.
                     </p>
-                    <button>Learn More</button>
+                    <a href="courses.php"><button>Learn More</button></a>
                 </div>
             </div>
 
             <div class="box">
                 <img src="images/piece.png">
                 <h3>The Perfect Fit</h3>
+                <br>
                 <button>Learn More</button>
                 <div class="overlay">
-                    <h3>Orton Gilligan Method</h3>
+                    <h3>The Perfect Fit</h3>
                     <p>
-                        Ivy Tutoring Service specializes in the Orton-Gillingham method, 
-                        a multisensory approach to remediating dyslexia. If a student has 
-                        difficulty with reading, spelling, and/or writing, our certified 
-                        tutors can help improve his/her decoding ability and reading fluency.
+                        Our individualized instruction is tailored to each student's unique learning 
+                        needs. We match students with a tutor based on their academic needs as well as their 
+                        personality and learning style.
                     </p>
-                    <button>Learn More</button>
+                    <a href="courses.php"><button>Learn More</button></a>
                 </div>
             </div>
 
             <div class="box">
-                <img src="images/piggy-bank.png">
-                <h3>Affordable Programs</h3>
+                <img src="images/schedule.png">
+                <h3>Flexible Scheduling</h3>
+                <br>
                 <button>Learn More</button>
                 <div class="overlay">
-                    <h3>Affordable Tutoring Programs</h3>
+                    <h3>Flexible Scheduling</h3>
                     <p>
-                        Our programs are affordable for every budget,
-                        and we offer flexible payment options to meet your needs.
+                        We work around your life, with programs to fit the busiest of schedules.
                     </p>
-                    <button>Learn More</button>
+                    <a href="courses.php"><button>Learn More</button></a>
                 </div>
             </div>
         </div>
@@ -220,65 +241,67 @@
 
         <h1 class="heading">We Tutor All Academic Subjects</h1>
         <ul>
-            <li><a href="">Elementary</a></li>
-            <li><a href="">Middle School</a></li>
-            <li><a href="">High School</a></li>
-            <li><a href="">College</a></li>
-            <li><a href="">Test Prep</a></li>
+            <li><a href="courses.php">Elementary</a></li>
+            <li><a href="courses.php">Middle School</a></li>
+            <li><a href="courses.php">High School</a></li>
+            <li><a href="courses.php">College</a></li>
+            <li><a href="courses.php">Test Prep</a></li> 
         </ul>
 
         <div class="box-container">
             <div class="box">
                 <img src="images/books.png">
                 <h3>Reading</h3>
-                <button>Learn More</button>
+                <a href="courses.php"><button>Learn More</button></a>
             </div>
 
             <div class="box">
                 <img src="images/writing.png">
                 <h3>Writing</h3>
-                <button>Learn More</button>
+                <a href="courses.php"><button>Learn More</button></a>
             </div>
 
             <div class="box">
                 <img src="images/history.png">
                 <h3>History</h3>
-                <button>Learn More</button>
+                <a href="courses.php"><button>Learn More</button></a>
             </div>
 
             <div class="box">
                 <img src="images/maths.png">
                 <h3>Math</h3>
-                <button>Learn More</button>
+                <a href="courses.php"><button>Learn More</button></a>
             </div>
 
             <div class="box">
                 <img src="images/science.png">
                 <h3>Science</h3>
-                <button>Learn More</button>
+                <a href="courses.php"><button>Learn More</button></a>
             </div>
 
             <div class="box">
                 <img src="images/science.png">
                 <h3>Science</h3>
-                <button>Learn More</button>
+                <a href="courses.php"><button>Learn More</button></a>
             </div>
 
             <div class="box">
                 <img src="images/science.png">
                 <h3>Science</h3>
-                <button>Learn More</button>
+                <a href="courses.php"><button>Learn More</button></a>
             </div>
 
             <div class="box">
                 <img src="images/science.png">
                 <h3>Science</h3>
-                <button>Learn More</button>
+                <a href="courses.php"><button>Learn More</button></a>
             </div>
 
         </div>
 
     </section>
+
+
 
     <!--- Start of Footer --->
     <footer class="footer">

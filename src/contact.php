@@ -1,3 +1,7 @@
+<?php
+    include('mail.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c3d71edc6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <header>
@@ -27,7 +31,7 @@
             </div>
     
             <div class="nav-icons">
-                <div id="account-btn" class="fas fa-user"></div>
+            <div data-modal-target="#modal" id="account-btn" class="fas fa-user"></div>
                 <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
             </div>
         </div>
@@ -39,6 +43,18 @@
         </div>
     </header>
 
+    <div class="modal" id="modal">
+        <span data-close-button class="close">&times;</span>
+        <div class="login-container">
+            <form action="">
+                <h1>Tutor Login</h1>
+                <input type="email" placeholder="Email" name="email" class="card">
+                <input type="password" placeholder="Password" name="password" class="card">
+                <input type="submit" name="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <div id="login-overlay"></div>
 
     <section class="contact">
 
@@ -66,41 +82,41 @@
             <div class="icons">
                 <h3>Phone</h3>
                 <i class="fas fa-phone"></i>
-                <h3>000-000-0000</h3>
-                <h3>973-999-9999</h3>
+                <h3>201-970-4814</h3>
             </div>
             <div class="icons">
                 <h3>Email</h3>
                 <i class="fas fa-envelope"></i>
-                <h3>Melissa@gmail.com</h3>
-                <h3>IvyTutoring@gmail.com</h3>
+                <!-- <h3>Email</h3> -->
+                <p>Mfrank@ivytutoringservice.com</p>
             </div>
             <div class="icons">
                 <h3>Locations</h3>
                 <i class="fas fa-map"></i>
-                <h3>New Jersey</h3>
-                <h3>New Jersey</h3>
+                <h3>North Jersey</h3>
             </div>
             <div class="icons">
-                <h3>Phone</h3>
-                <i class="fas fa-phone"></i>
-                <h3>000-000-0000</h3>
-                <h3>973-999-9999</h3>
+                <h3>Hours of Operation</h3>
+                <i class="fas fa-clock"></i>
+                <h3>7 Days a Week</h3>
             </div>
         </div>
         
         <div class="row">
             <div class="contact-image">
-                <img src="images/tutorPic.jpeg">
+                <img src="images/contact-img.png">
             </div>
 
-            <form action="">
+            <form method="post">
                 <h3>Send Us an Email</h3>
                 <input type="text" placeholder="Name" name="name" class="card">
                 <input type="email" placeholder="Email" name="email" class="card">
                 <input type="text" placeholder="Phone" name="phone" class="card">
-                <textarea name="" class="card" placeholder="Message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <textarea name="Message" class="card" placeholder="Message" cols="30" rows="10"></textarea>
+                <input type="submit" name="submit" value="Send Message" class="btn">
+                <?php if(!empty($status)){ ?>
+                    <div class="success"> <?php echo $status; ?></div>
+                <?php } ?>
             </form>
         </div>
 
@@ -114,9 +130,9 @@
             <!-- COLUMN 1 LINKS -->
             <div class="footer-links">
                 <h4>Get to Know Us</h4>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">About Us</a>
+                <a href="about.php">About Us</a>
+                <a href="contact.php">Contact Us</a>
+                <a href="courses.php">Courses</a>
                 <!-- <hr> -->
             </div>
             <!-- COLUMN 2 LINKS -->
@@ -150,7 +166,33 @@
     </footer>
     <!--- End of Footer --->
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        // Get the modal
+        var modal = document.getElementById("MyModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("account-btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
     
 
 </body>

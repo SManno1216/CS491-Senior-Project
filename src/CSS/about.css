@@ -19,7 +19,7 @@
     --body-font: 1.1rem;
 }
 
-.about{
+/* .about{
     line-height: 1.8;
     margin: 20px;
     padding: 20px;
@@ -66,4 +66,52 @@
 }
 .melissa-body{
     align-items: right;
+} */
+
+.about-melissa-section{
+    min-height: 600px;
+    padding: 2rem 5%;
+    border: 1px solid black;
 }
+
+.about-melissa{
+    display: flex;
+    border: 1px solid black;
+}
+
+.melissa-image{
+    position: relative;
+}
+
+.melissa-image img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.melissa-bio h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.melissa-bio p{
+    margin-top: .5rem;
+    font-size: 1.1rem;
+    padding: .5rem 2rem;
+}
+
+.list{
+    padding: .5rem 2rem;
+    text-align: left;
+
+}
+
+@media (max-width: 1000px) {
+
+
+    .about-melissa{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

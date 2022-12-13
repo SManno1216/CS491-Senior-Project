@@ -51,6 +51,12 @@ body{
 
 .icons h3{
     padding: .5rem 0;
+    flex-wrap: wrap;
+}
+
+.icons p{
+    font-size: 1rem;
+    padding: .5rem 0;
 }
 
 .contact-body{
@@ -84,12 +90,12 @@ body{
 }
 
 .row .contact-image{
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
 }
 
 .row .contact-image img{
     width: 100%;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     border-radius: 2rem;
     object-fit: contain;
 }
@@ -109,11 +115,12 @@ body{
 
 form{
     height: 100%;
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
     padding: 1rem;
     text-align: center;
     border: var(--border);
     background: var(--secondary-color);
+    border-radius: 1rem;
 }
 
 form h3{

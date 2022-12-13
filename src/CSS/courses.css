@@ -70,13 +70,12 @@
 }
 .section-6 .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
 
 .section-6 .box{
-
     padding: 11rem 2rem;
     text-align: center;
     border: var(--border);
